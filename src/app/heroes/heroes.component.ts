@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Hero } from '../hero';
 
 
 
@@ -8,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  hero = 'Windstrom';
-  
+  hero: Hero = {
+    id: 1,
+    name: 'Windstorm'
+  }
+
   constructor() { }
 
   ngOnInit(): void {
